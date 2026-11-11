@@ -1,0 +1,87 @@
+{
+ "range": [
+  "2024-01-01",
+  "2026-11-09"
+ ],
+ "seed": 2026,
+ "scale": 1.0,
+ "orders_unique": 193017,
+ "customers": 148332,
+ "tables": {
+  "manual/category": {
+   "rows": 330,
+   "files": 12
+  },
+  "manual/product_category": {
+   "rows": 2738,
+   "files": 12
+  },
+  "manual/shopee_listing_map": {
+   "rows": 4224,
+   "files": 12
+  },
+  "nhanh/brands": {
+   "rows": 1800,
+   "files": 36
+  },
+  "nhanh/categories": {
+   "rows": 1044,
+   "files": 36
+  },
+  "nhanh/combos": {
+   "rows": 1943,
+   "files": 36
+  },
+  "nhanh/depots": {
+   "rows": 130,
+   "files": 36
+  },
+  "nhanh/inventory": {
+   "rows": 237574,
+   "files": 1044
+  },
+  "nhanh/inventory_bills": {
+   "rows": 263169,
+   "files": 1044
+  },
+  "nhanh/orders": {
+   "rows": 504514,
+   "files": 1044
+  },
+  "nhanh/products": {
+   "rows": 8222,
+   "files": 36
+  },
+  "shopee/product_performance": {
+   "rows": 170153,
+   "files": 2380
+  },
+  "shopee/reviews": {
+   "rows": 43706,
+   "files": 298
+  }
+ },
+ "orders_by_shop": {
+  "shopee_hcm": 124639,
+  "shopee_hn": 36287,
+  "admin": 2124,
+  "tiktok_main": 28765,
+  "tiktok_2": 1202
+ },
+ "final_status": {
+  "60": 160212,
+  "74": 6468,
+  "64": 3905,
+  "68": 2785,
+  "63": 14955,
+  "72": 2825,
+  "58": 745,
+  "71": 59,
+  "59": 833,
+  "61": 6,
+  "56": 214,
+  "43": 1,
+  "54": 6,
+  "57": 3
+ }
+}

@@ -1,0 +1,268 @@
+x-airflow-env: &airflow-env
+  AIRFLOW__CORE__EXECUTOR: LocalExecutor
+  AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+  AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
+  AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW_SECRET_KEY}
+  AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+  AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+  AIRFLOW__CORE__DEFAULT_TIMEZONE: Asia/Ho_Chi_Minh
+  AIRFLOW__WEBSERVER__DEFAULT_UI_TIMEZONE: Asia/Ho_Chi_Minh
+  AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL: 30
+  AWS_ACCESS_KEY_ID: ${MINIO_ROOT_USER}
+  AWS_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD}
+  AWS_REGION: ${AWS_REGION}
+  LANDING_BUCKET: ${LANDING_BUCKET}
+  LAKEHOUSE_BUCKET: ${LAKEHOUSE_BUCKET}
+  MINIO_ENDPOINT: http://minio:9000
+  ICEBERG_REST_URI: http://iceberg-rest:8181
+  TRINO_URI: http://trino:8080
+  SPARK_MASTER_UI: http://spark-master:8080
+  AIRFLOW__METRICS__STATSD_ON: "true"
+  AIRFLOW__METRICS__STATSD_HOST: statsd-exporter
+  AIRFLOW__METRICS__STATSD_PORT: 9125
+  AIRFLOW__METRICS__STATSD_PREFIX: airflow
+
+x-airflow-common: &airflow-common
+  image: ${AIRFLOW_IMAGE}
+  user: "${AIRFLOW_UID}:0"
+  environment: *airflow-env
+  volumes:
+    - ./airflow/dags:/opt/airflow/dags
+    - ./airflow/logs:/opt/airflow/logs
+    - ./airflow/plugins:/opt/airflow/plugins
+
+services:
+  minio:
+    image: ${MINIO_IMAGE}
+    container_name: minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+      MINIO_PROMETHEUS_AUTH_TYPE: public
+    ports:
+      - "${MINIO_API_PORT}:9000"
+      - "${MINIO_CONSOLE_PORT}:9001"
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+
+  minio-init:
+    image: ${MINIO_IMAGE}
+    container_name: minio-init
+    depends_on:
+      minio:
+        condition: service_healthy
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+      LANDING_BUCKET: ${LANDING_BUCKET}
+      LAKEHOUSE_BUCKET: ${LAKEHOUSE_BUCKET}
+    entrypoint: >
+      /bin/sh -c "
+      mc alias set local http://minio:9000 $$MINIO_ROOT_USER $$MINIO_ROOT_PASSWORD &&
+      mc mb -p local/$$LANDING_BUCKET &&
+      mc mb -p local/$$LAKEHOUSE_BUCKET &&
+      mc ls local"
+    restart: "no"
+
+  iceberg-rest:
+    image: ${ICEBERG_REST_IMAGE}
+    container_name: iceberg-rest
+    depends_on:
+      minio-init:
+        condition: service_completed_successfully
+    environment:
+      AWS_ACCESS_KEY_ID: ${MINIO_ROOT_USER}
+      AWS_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD}
+      AWS_REGION: ${AWS_REGION}
+      CATALOG_WAREHOUSE: s3://${LAKEHOUSE_BUCKET}/
+      CATALOG_IO__IMPL: org.apache.iceberg.aws.s3.S3FileIO
+      CATALOG_S3_ENDPOINT: http://minio:9000
+      CATALOG_S3_PATH__STYLE__ACCESS: "true"
+      CATALOG_URI: jdbc:sqlite:file:/home/iceberg/iceberg_catalog.db
+    ports:
+      - "${ICEBERG_REST_PORT}:8181"
+    volumes:
+      - iceberg_catalog:/home/iceberg
+  trino:
+    image: ${TRINO_IMAGE}
+    container_name: trino
+    depends_on:
+      - iceberg-rest
+    environment:
+      AWS_ACCESS_KEY_ID: ${MINIO_ROOT_USER}
+      AWS_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD}
+      AWS_REGION: ${AWS_REGION}
+      LAKEHOUSE_BUCKET: ${LAKEHOUSE_BUCKET}
+    ports:
+      - "${TRINO_PORT}:8080"
+    volumes:
+      - ./conf/trino/catalog:/etc/trino/catalog:ro
+    mem_limit: ${TRINO_MEM_LIMIT}
+  
+  spark-master:
+    build:
+      context: ./docker/spark
+      args:
+        SPARK_BASE_IMAGE: ${SPARK_BASE_IMAGE}
+        ICEBERG_VERSION: ${ICEBERG_VERSION}
+        HADOOP_AWS_VERSION: ${HADOOP_AWS_VERSION}
+        AWS_SDK_BUNDLE_VERSION: ${AWS_SDK_BUNDLE_VERSION}
+    image: ${SPARK_IMAGE}
+    container_name: spark-master
+    hostname: spark-master
+    command: ["/opt/spark/bin/spark-class", "org.apache.spark.deploy.master.Master"]
+    depends_on:
+      - iceberg-rest
+    environment:
+      AWS_ACCESS_KEY_ID: ${MINIO_ROOT_USER}
+      AWS_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD}
+      AWS_REGION: ${AWS_REGION}
+    ports:
+      - "${SPARK_MASTER_UI_PORT}:8080"
+      - "${SPARK_APP_UI_PORT}:4040"
+    volumes:
+      - ./conf/spark/spark-defaults.conf:/opt/spark/conf/spark-defaults.conf:ro
+      - ./jobs:/opt/spark/jobs
+      - ./conf/spark/metrics.properties:/opt/spark/conf/metrics.properties:ro
+
+  spark-worker:
+    image: ${SPARK_IMAGE}
+    container_name: spark-worker
+    hostname: spark-worker
+    command: ["/opt/spark/bin/spark-class", "org.apache.spark.deploy.worker.Worker", "spark://spark-master:7077"]
+    depends_on:
+      - spark-master
+    environment:
+      AWS_ACCESS_KEY_ID: ${MINIO_ROOT_USER}
+      AWS_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD}
+      AWS_REGION: ${AWS_REGION}
+      SPARK_WORKER_CORES: ${SPARK_WORKER_CORES}
+      SPARK_WORKER_MEMORY: ${SPARK_WORKER_MEMORY}
+    ports:
+      - "${SPARK_WORKER_UI_PORT}:8081"
+    volumes:
+      - ./conf/spark/spark-defaults.conf:/opt/spark/conf/spark-defaults.conf:ro
+      - ./jobs:/opt/spark/jobs
+      - ./conf/spark/metrics.properties:/opt/spark/conf/metrics.properties:ro
+    mem_limit: ${SPARK_WORKER_MEM_LIMIT}
+
+  postgres:
+    image: ${POSTGRES_IMAGE}
+    container_name: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER}", "-d", "${POSTGRES_DB}"]
+      interval: 5s
+      retries: 20
+
+  airflow-init:
+    <<: *airflow-common
+    container_name: airflow-init
+    command: version
+    environment:
+      <<: *airflow-env
+      _AIRFLOW_DB_MIGRATE: "true"
+      _AIRFLOW_WWW_USER_CREATE: "true"
+      _AIRFLOW_WWW_USER_USERNAME: ${AIRFLOW_ADMIN_USER}
+      _AIRFLOW_WWW_USER_PASSWORD: ${AIRFLOW_ADMIN_PASSWORD}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: "no"
+
+  airflow-webserver:
+    <<: *airflow-common
+    container_name: airflow-webserver
+    command: webserver
+    ports:
+      - "${AIRFLOW_PORT}:8080"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 15s
+      retries: 10
+      start_period: 30s
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
+  airflow-scheduler:
+    <<: *airflow-common
+    container_name: airflow-scheduler
+    command: scheduler
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
+  prometheus:
+    image: ${PROMETHEUS_IMAGE}
+    container_name: prometheus
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --storage.tsdb.retention.time=15d
+      - --web.enable-lifecycle
+    ports:
+      - "${PROMETHEUS_PORT}:9090"
+    volumes:
+      - ./conf/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prom_data:/prometheus
+  statsd-exporter:
+    image: ${STATSD_IMAGE}
+    container_name: statsd-exporter
+
+  grafana:
+    image: ${GRAFANA_IMAGE}
+    container_name: grafana
+    depends_on:
+      - prometheus
+    environment:
+      GF_SECURITY_ADMIN_USER: ${GRAFANA_ADMIN_USER}
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD}
+    ports:
+      - "${GRAFANA_PORT}:3000"
+    volumes:
+      - ./conf/grafana/provisioning:/etc/grafana/provisioning:ro
+      - grafana_data:/var/lib/grafana
+      
+  dbt:
+    build:
+      context: ./docker/dbt
+      args:
+        DBT_BASE_IMAGE: ${DBT_BASE_IMAGE}
+        DBT_CORE_VERSION: ${DBT_CORE_VERSION}
+        DBT_TRINO_VERSION: ${DBT_TRINO_VERSION}
+    image: ${DBT_IMAGE}
+    profiles: ["tools"]
+    depends_on:
+      - trino
+    environment:
+      DBT_TRINO_HOST: trino
+      DBT_TRINO_PORT: 8080
+      DBT_PROFILES_DIR: /usr/app/dbt
+    volumes:
+      - ./dbt:/usr/app/dbt
+    ports:
+      - "${DBT_DOCS_PORT}:8080"
+  
+  
+
+volumes:
+  minio_data:
+  iceberg_catalog:
+  pg_data:
+  prom_data:
+  grafana_data:

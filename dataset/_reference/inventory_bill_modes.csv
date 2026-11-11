@@ -1,0 +1,8 @@
+﻿type,mode,y_nghia
+2,19,Xuất bán đơn Shopee
+2,1,Xuất bán đơn TikTok/Admin
+1,1,Nhập hàng hoàn (có orderId)
+2,3,Xuất chuyển kho (từ Kho Hàng Thô)
+1,3,Nhập chuyển kho (về kho bán)
+1,10,Nhập hàng từ xưởng/NCC hoặc điều chỉnh kiểm kho thừa
+2,10,Xuất hủy/xuất mẫu/điều chỉnh kiểm kho thiếu

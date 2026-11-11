@@ -1,0 +1,16 @@
+﻿status,ten_trang_thai,nhom
+54,Mới,Đang xử lý
+56,Đã xác nhận,Đang xử lý
+57,Chờ khách xác nhận,Đang xử lý
+42,Đang đóng gói,Đang xử lý
+43,Đã đóng gói,Đang xử lý
+59,Đang chuyển,Đang giao
+60,Thành công,Thành công
+61,Giao thất bại,Hoàn
+71,Đang chuyển hoàn,Hoàn
+72,Đã chuyển hoàn,Hoàn
+74,Xác nhận hoàn (đã nhận lại hàng),Hoàn
+63,Khách hủy,Hủy
+64,Hệ thống hủy,Hủy
+58,Hãng vận chuyển hủy,Hủy
+68,Hết hàng,Hủy

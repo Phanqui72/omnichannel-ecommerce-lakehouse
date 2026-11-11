@@ -1,0 +1,93 @@
+{
+ "tong_hop": [
+  [
+   "nhanh",
+   "orders",
+   50,
+   91
+  ],
+  [
+   "nhanh",
+   "products",
+   50,
+   43
+  ],
+  [
+   "nhanh",
+   "inventory",
+   50,
+   19
+  ],
+  [
+   "nhanh",
+   "combos",
+   50,
+   8
+  ],
+  [
+   "nhanh",
+   "categories",
+   29,
+   9
+  ],
+  [
+   "nhanh",
+   "brands",
+   50,
+   8
+  ],
+  [
+   "nhanh",
+   "depots",
+   4,
+   17
+  ],
+  [
+   "nhanh",
+   "inventory_bills",
+   50,
+   42
+  ],
+  [
+   "shopee",
+   "product_performance",
+   50,
+   52
+  ],
+  [
+   "shopee",
+   "reviews",
+   50,
+   27
+  ],
+  [
+   "manual",
+   "category",
+   28,
+   6
+  ],
+  [
+   "manual",
+   "product_category",
+   50,
+   6
+  ]
+ ],
+ "truong_da_che": {
+  "order.shippingAddress.name": 47,
+  "order.shippingAddress.address": 47,
+  "order.shippingAddress.location": 31,
+  "order.info.saleName": 26,
+  "order.info.trackingUrl": 50,
+  "order.info.packName": 25,
+  "order.shippingAddress.mobile": 6,
+  "order.shippingAddress.id": 6,
+  "order.info.description": 4,
+  "order.info.createdByName": 6,
+  "order.payment.transfer.name": 5,
+  "depot.mobile": 4,
+  "review.user_name": 50,
+  "review.user_portrait": 50,
+  "review.user_id": 50
+ }
+}

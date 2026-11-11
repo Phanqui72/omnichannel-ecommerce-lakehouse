@@ -1,0 +1,26 @@
+# ---- Bí mật: KHÔNG BAO GIỜ commit ----
+.env
+
+# ---- File sinh ra khi chạy ----
+*.log
+airflow/logs/*
+!airflow/logs/.gitkeep
+__pycache__/
+*.pyc
+
+# dbt
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+dbt/.user.yml
+
+# ---- Dữ liệu: không đưa lên repo (quá lớn / dữ liệu thật) ----
+data/
+*.jsonl.gz
+*.parquet
+
+# ---- IDE / hệ điều hành ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

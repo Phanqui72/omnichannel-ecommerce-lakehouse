@@ -1,0 +1,6 @@
+﻿shop_key,sale_channel,channel_name,shop_id,default_depot_id,start_date
+shopee_hcm,42,Shopee,100200301,109169,2024-01-01
+shopee_hn,42,Shopee,100200302,181215,2024-01-01
+tiktok_main,48,TikTok Shop,7300000000000000101,109169,2024-03-15
+tiktok_2,48,TikTok Shop,7300000000000000102,109169,2026-06-01
+admin,1,Admin (B2B / bán sỉ / giao bù / Zalo-FB),,109169,2024-01-01

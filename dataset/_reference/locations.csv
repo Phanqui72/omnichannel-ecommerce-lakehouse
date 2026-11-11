@@ -1,0 +1,552 @@
+﻿city_id,city_name,ward_id,ward_name
+254,Hà Nội,20001,Phường Hoàn Kiếm
+254,Hà Nội,20003,Phường Cửa Nam
+254,Hà Nội,20009,Phường Ba Đình
+254,Hà Nội,20018,Phường Ngọc Hà
+254,Hà Nội,20027,Phường Giảng Võ
+254,Hà Nội,20029,Phường Đống Đa
+254,Hà Nội,20033,Phường Văn Miếu - Quốc Tử Giám
+254,Hà Nội,20042,Phường Láng
+254,Hà Nội,20049,Phường Ô Chợ Dừa
+254,Hà Nội,20058,Phường Kim Liên
+254,Hà Nội,20066,Phường Hai Bà Trưng
+254,Hà Nội,20074,Phường Bạch Mai
+254,Hà Nội,20078,Phường Vĩnh Tuy
+254,Hà Nội,20079,Phường Tây Hồ
+254,Hà Nội,20081,Phường Phú Thượng
+254,Hà Nội,20083,Phường Cầu Giấy
+254,Hà Nội,20088,Phường Nghĩa Đô
+254,Hà Nội,20090,Phường Yên Hòa
+254,Hà Nội,20098,Phường Thanh Xuân
+254,Hà Nội,20099,Phường Khương Đình
+254,Hà Nội,20107,Phường Phương Liệt
+254,Hà Nội,20113,Phường Hoàng Mai
+254,Hà Nội,20117,Phường Định Công
+254,Hà Nội,20124,Phường Hoàng Liệt
+254,Hà Nội,20129,Phường Long Biên
+254,Hà Nội,20135,Phường Bồ Đề
+254,Hà Nội,20141,Phường Việt Hưng
+254,Hà Nội,20148,Phường Hà Đông
+254,Hà Nội,20157,Phường Dương Nội
+254,Hà Nội,20159,Phường Kiến Hưng
+254,Hà Nội,20165,Phường Từ Liêm
+254,Hà Nội,20167,Phường Xuân Phương
+254,Hà Nội,20176,Phường Tây Mỗ
+254,Hà Nội,20185,Phường Đại Mỗ
+254,Hà Nội,20190,Phường Thượng Cát
+254,Hà Nội,20195,Phường Đông Anh
+254,Hà Nội,20203,Phường Gia Lâm
+254,Hà Nội,20206,Phường Thanh Trì
+254,Hà Nội,20211,Phường Sơn Tây
+254,Hà Nội,20212,Phường Hoài Đức
+255,Hồ Chí Minh,20218,Phường Sài Gòn
+255,Hồ Chí Minh,20224,Phường Bến Thành
+255,Hồ Chí Minh,20232,Phường Tân Định
+255,Hồ Chí Minh,20239,Phường Bàn Cờ
+255,Hồ Chí Minh,20241,Phường Xuân Hòa
+255,Hồ Chí Minh,20248,Phường Chợ Lớn
+255,Hồ Chí Minh,20257,Phường An Đông
+255,Hồ Chí Minh,20265,Phường Bình Tây
+255,Hồ Chí Minh,20267,Phường Phú Nhuận
+255,Hồ Chí Minh,20274,Phường Đức Nhuận
+255,Hồ Chí Minh,20283,Phường Gia Định
+255,Hồ Chí Minh,20291,Phường Bình Thạnh
+255,Hồ Chí Minh,20298,Phường Thạnh Mỹ Tây
+255,Hồ Chí Minh,20307,Phường Gò Vấp
+255,Hồ Chí Minh,20312,Phường Hạnh Thông
+255,Hồ Chí Minh,20319,Phường An Nhơn
+255,Hồ Chí Minh,20327,Phường Tân Sơn Nhất
+255,Hồ Chí Minh,20336,Phường Tân Bình
+255,Hồ Chí Minh,20345,Phường Bảy Hiền
+255,Hồ Chí Minh,20346,Phường Tân Phú
+255,Hồ Chí Minh,20350,Phường Phú Thọ Hòa
+255,Hồ Chí Minh,20353,Phường Bình Tân
+255,Hồ Chí Minh,20354,Phường An Lạc
+255,Hồ Chí Minh,20363,Phường Thủ Đức
+255,Hồ Chí Minh,20365,Phường Linh Xuân
+255,Hồ Chí Minh,20372,Phường An Phú
+255,Hồ Chí Minh,20380,Phường Bình Trưng
+255,Hồ Chí Minh,20383,Phường Cát Lái
+255,Hồ Chí Minh,20391,Phường Hiệp Bình
+255,Hồ Chí Minh,20395,Phường Tân Chánh Hiệp
+255,Hồ Chí Minh,20397,Phường Trung Mỹ Tây
+255,Hồ Chí Minh,20405,Phường Tân Thới Hiệp
+255,Hồ Chí Minh,20413,Phường Đông Hưng Thuận
+255,Hồ Chí Minh,20422,Phường Phú Định
+255,Hồ Chí Minh,20427,Phường Tân Hưng
+255,Hồ Chí Minh,20436,Phường Tân Mỹ
+255,Hồ Chí Minh,20443,Phường Dĩ An
+255,Hồ Chí Minh,20448,Phường Thủ Dầu Một
+255,Hồ Chí Minh,20457,Phường Vũng Tàu
+255,Hồ Chí Minh,20466,Phường Bà Rịa
+256,Hải Phòng,20474,Phường Bắc Sơn
+256,Hải Phòng,20482,Phường Bình Minh
+256,Hải Phòng,20490,Xã Trung Tâm
+256,Hải Phòng,20499,Xã Phú Lợi
+256,Hải Phòng,20500,Xã An Hòa
+256,Hải Phòng,20506,Phường Tân Phú
+256,Hải Phòng,20508,Phường Thạnh Mỹ
+256,Hải Phòng,20517,Phường Thống Nhất
+256,Hải Phòng,20520,Xã Hùng Vương
+256,Hải Phòng,20528,Xã Hưng Lợi
+256,Hải Phòng,20533,Xã Quang Trung
+256,Hải Phòng,20539,Phường Tân Lập
+256,Hải Phòng,20546,Phường Tây Sơn
+256,Hải Phòng,20547,Phường Trần Phú
+257,Đà Nẵng,20555,Phường Lê Lợi
+257,Đà Nẵng,20563,Xã Tân Thành
+257,Đà Nẵng,20566,Phường Hòa Bình
+257,Đà Nẵng,20574,Phường Hùng Vương
+257,Đà Nẵng,20583,Phường Bình Minh
+257,Đà Nẵng,20590,Xã Long Hưng
+257,Đà Nẵng,20593,Xã Phước Long
+257,Đà Nẵng,20598,Phường Phú Hòa
+257,Đà Nẵng,20605,Xã Tân Phú
+257,Đà Nẵng,20614,Xã Đông Hòa
+257,Đà Nẵng,20621,Phường Phú Lợi
+257,Đà Nẵng,20623,Phường Tây Sơn
+257,Đà Nẵng,20625,Phường Thạnh Mỹ
+257,Đà Nẵng,20631,Xã An Hòa
+257,Đà Nẵng,20632,Phường Tân An
+257,Đà Nẵng,20640,Phường Đông Thành
+257,Đà Nẵng,20645,Phường Trung Tâm
+258,Cần Thơ,20647,Phường Hưng Lợi
+258,Cần Thơ,20650,Phường Trần Phú
+258,Cần Thơ,20659,Xã Hùng Vương
+258,Cần Thơ,20660,Phường Tân An
+258,Cần Thơ,20664,Phường Thạnh Mỹ
+258,Cần Thơ,20665,Phường Tân Thành
+258,Cần Thơ,20674,Phường Quang Trung
+258,Cần Thơ,20683,Xã Bình Minh
+258,Cần Thơ,20686,Phường Bắc Sơn
+258,Cần Thơ,20689,Phường Đông Thành
+258,Cần Thơ,20696,Phường Đông Hòa
+258,Cần Thơ,20698,Phường Long Hưng
+258,Cần Thơ,20701,Phường Hòa Bình
+258,Cần Thơ,20706,Phường Phú Lợi
+258,Cần Thơ,20713,Phường Thống Nhất
+259,Huế,20716,Xã Quang Trung
+259,Huế,20723,Phường Tân Lập
+259,Huế,20726,Xã Hưng Lợi
+259,Huế,20732,Xã Phước Long
+259,Huế,20738,Phường Đông Hòa
+259,Huế,20747,Phường Hiệp Thành
+259,Huế,20752,Phường Phú Lợi
+259,Huế,20756,Phường Phú Hòa
+259,Huế,20761,Xã Bình Minh
+259,Huế,20764,Phường Long Hưng
+259,Huế,20769,Phường An Hòa
+259,Huế,20776,Phường Hòa Bình
+259,Huế,20777,Xã An Phước
+260,Đồng Nai,20780,Xã Thống Nhất
+260,Đồng Nai,20781,Phường Phước Long
+260,Đồng Nai,20782,Phường Quang Trung
+260,Đồng Nai,20784,Xã Đông Thành
+260,Đồng Nai,20790,Phường Phú Lợi
+260,Đồng Nai,20798,Xã Trần Phú
+260,Đồng Nai,20799,Xã Hòa Bình
+260,Đồng Nai,20805,Xã Trung Tâm
+260,Đồng Nai,20813,Phường Phú Hòa
+260,Đồng Nai,20815,Xã Tân An
+260,Đồng Nai,20824,Xã Hiệp Thành
+260,Đồng Nai,20829,Phường Lê Lợi
+260,Đồng Nai,20835,Phường Hòa Thuận
+260,Đồng Nai,20842,Xã An Hòa
+260,Đồng Nai,20847,Xã Bình Minh
+260,Đồng Nai,20852,Xã Nam Định
+260,Đồng Nai,20854,Phường Thạnh Mỹ
+260,Đồng Nai,20861,Phường Bắc Sơn
+261,Bắc Ninh,20862,Phường Đông Thành
+261,Bắc Ninh,20869,Phường Bình Minh
+261,Bắc Ninh,20875,Phường Lê Lợi
+261,Bắc Ninh,20882,Phường Tân Phú
+261,Bắc Ninh,20889,Xã Hiệp Thành
+261,Bắc Ninh,20892,Phường Phước Long
+261,Bắc Ninh,20893,Xã Tân An
+261,Bắc Ninh,20902,Xã Hùng Vương
+261,Bắc Ninh,20909,Xã Vĩnh Phúc
+261,Bắc Ninh,20912,Phường Thống Nhất
+261,Bắc Ninh,20913,Phường Phú Hòa
+261,Bắc Ninh,20921,Phường Thạnh Mỹ
+261,Bắc Ninh,20927,Phường Tây Sơn
+261,Bắc Ninh,20929,Xã Trung Tâm
+261,Bắc Ninh,20938,Phường Đông Hòa
+261,Bắc Ninh,20947,Xã Bắc Sơn
+262,Hưng Yên,20953,Xã Quang Trung
+262,Hưng Yên,20957,Phường Phú Hòa
+262,Hưng Yên,20962,Phường Hiệp Thành
+262,Hưng Yên,20966,Phường Đông Thành
+262,Hưng Yên,20974,Xã Tân Phú
+262,Hưng Yên,20983,Xã Hòa Thuận
+262,Hưng Yên,20988,Phường An Hòa
+262,Hưng Yên,20995,Phường Thống Nhất
+262,Hưng Yên,20996,Xã Long Hưng
+262,Hưng Yên,21005,Xã Tân Lập
+262,Hưng Yên,21006,Xã An Phước
+262,Hưng Yên,21008,Phường Hùng Vương
+262,Hưng Yên,21017,Xã Thạnh Mỹ
+262,Hưng Yên,21020,Xã Hưng Lợi
+262,Hưng Yên,21022,Xã Tây Sơn
+262,Hưng Yên,21023,Phường Bình Minh
+262,Hưng Yên,21028,Phường Bắc Sơn
+262,Hưng Yên,21035,Phường Tân An
+263,Quảng Ninh,21044,Phường Hòa Thuận
+263,Quảng Ninh,21051,Phường Tân An
+263,Quảng Ninh,21052,Xã Quang Trung
+263,Quảng Ninh,21060,Xã Phước Long
+263,Quảng Ninh,21066,Xã Hòa Bình
+263,Quảng Ninh,21075,Phường Thạnh Mỹ
+263,Quảng Ninh,21084,Phường Nam Định
+263,Quảng Ninh,21090,Phường Đông Thành
+263,Quảng Ninh,21093,Phường Lê Lợi
+263,Quảng Ninh,21095,Phường Phú Lợi
+263,Quảng Ninh,21096,Xã Trung Tâm
+263,Quảng Ninh,21098,Phường Tân Phú
+263,Quảng Ninh,21102,Phường Bình Minh
+263,Quảng Ninh,21106,Phường Hiệp Thành
+263,Quảng Ninh,21112,Phường Vĩnh Phúc
+263,Quảng Ninh,21114,Phường Bắc Sơn
+263,Quảng Ninh,21119,Xã Trần Phú
+263,Quảng Ninh,21125,Phường Đông Hòa
+264,Thanh Hóa,21133,Phường Lê Lợi
+264,Thanh Hóa,21135,Xã Quang Trung
+264,Thanh Hóa,21140,Phường Long Hưng
+264,Thanh Hóa,21144,Phường Tây Sơn
+264,Thanh Hóa,21151,Phường Hòa Thuận
+264,Thanh Hóa,21157,Phường Hưng Lợi
+264,Thanh Hóa,21165,Phường Trần Phú
+264,Thanh Hóa,21168,Phường Phú Hòa
+264,Thanh Hóa,21176,Phường Hòa Bình
+265,Nghệ An,21182,Xã Bắc Sơn
+265,Nghệ An,21188,Phường Tân Thành
+265,Nghệ An,21196,Phường An Phước
+265,Nghệ An,21205,Xã Trần Phú
+265,Nghệ An,21209,Phường Nam Định
+265,Nghệ An,21212,Phường Bình Minh
+265,Nghệ An,21214,Phường Thạnh Mỹ
+265,Nghệ An,21222,Xã Hưng Lợi
+265,Nghệ An,21229,Phường Phú Hòa
+265,Nghệ An,21235,Xã Hòa Thuận
+265,Nghệ An,21241,Phường Đông Hòa
+265,Nghệ An,21249,Xã Phú Lợi
+265,Nghệ An,21258,Phường Đông Thành
+266,Hà Tĩnh,21265,Xã Thống Nhất
+266,Hà Tĩnh,21273,Xã Đông Thành
+266,Hà Tĩnh,21281,Phường Tân Phú
+266,Hà Tĩnh,21282,Xã Nam Định
+266,Hà Tĩnh,21284,Xã Hiệp Thành
+266,Hà Tĩnh,21289,Phường Tân An
+266,Hà Tĩnh,21293,Xã An Hòa
+266,Hà Tĩnh,21302,Phường Phú Lợi
+266,Hà Tĩnh,21308,Phường Lê Lợi
+266,Hà Tĩnh,21312,Phường Đông Hòa
+266,Hà Tĩnh,21313,Xã Thạnh Mỹ
+266,Hà Tĩnh,21316,Phường Tân Thành
+266,Hà Tĩnh,21320,Xã Bắc Sơn
+267,Quảng Trị,21324,Phường Hòa Thuận
+267,Quảng Trị,21333,Xã Tân An
+267,Quảng Trị,21341,Xã Vĩnh Phúc
+267,Quảng Trị,21347,Phường Trung Tâm
+267,Quảng Trị,21353,Xã Hòa Bình
+267,Quảng Trị,21358,Phường Trần Phú
+267,Quảng Trị,21364,Xã Bắc Sơn
+267,Quảng Trị,21365,Xã Quang Trung
+267,Quảng Trị,21368,Phường An Phước
+267,Quảng Trị,21374,Phường Lê Lợi
+267,Quảng Trị,21382,Phường Thạnh Mỹ
+267,Quảng Trị,21387,Phường Phước Long
+267,Quảng Trị,21394,Phường An Hòa
+267,Quảng Trị,21395,Xã Hùng Vương
+267,Quảng Trị,21397,Xã Bình Minh
+267,Quảng Trị,21406,Xã Tân Lập
+267,Quảng Trị,21411,Xã Hiệp Thành
+268,Quảng Ngãi,21413,Xã Quang Trung
+268,Quảng Ngãi,21415,Xã Hùng Vương
+268,Quảng Ngãi,21419,Phường Đông Thành
+268,Quảng Ngãi,21423,Phường Tân Lập
+268,Quảng Ngãi,21432,Xã An Phước
+268,Quảng Ngãi,21435,Phường Hòa Thuận
+268,Quảng Ngãi,21440,Xã Hiệp Thành
+268,Quảng Ngãi,21448,Phường Tây Sơn
+268,Quảng Ngãi,21454,Phường Tân An
+268,Quảng Ngãi,21461,Phường Hòa Bình
+268,Quảng Ngãi,21470,Phường Lê Lợi
+268,Quảng Ngãi,21479,Xã Tân Thành
+268,Quảng Ngãi,21482,Xã Phú Lợi
+268,Quảng Ngãi,21485,Xã Bắc Sơn
+268,Quảng Ngãi,21486,Xã Phú Hòa
+268,Quảng Ngãi,21487,Phường Hưng Lợi
+269,Gia Lai,21492,Xã Thạnh Mỹ
+269,Gia Lai,21495,Phường Phú Lợi
+269,Gia Lai,21503,Xã Lê Lợi
+269,Gia Lai,21504,Phường Vĩnh Phúc
+269,Gia Lai,21513,Phường Tây Sơn
+269,Gia Lai,21522,Phường Đông Hòa
+269,Gia Lai,21529,Phường Hưng Lợi
+269,Gia Lai,21535,Phường Tân An
+269,Gia Lai,21544,Phường Thống Nhất
+269,Gia Lai,21545,Phường Tân Phú
+270,Đắk Lắk,21551,Phường Đông Hòa
+270,Đắk Lắk,21559,Phường Vĩnh Phúc
+270,Đắk Lắk,21562,Phường Tân Thành
+270,Đắk Lắk,21569,Xã Phú Lợi
+270,Đắk Lắk,21577,Xã Đông Thành
+270,Đắk Lắk,21581,Xã An Hòa
+270,Đắk Lắk,21589,Xã Tân An
+270,Đắk Lắk,21598,Xã Quang Trung
+270,Đắk Lắk,21600,Xã Bình Minh
+270,Đắk Lắk,21604,Xã Hòa Bình
+270,Đắk Lắk,21606,Xã Bắc Sơn
+270,Đắk Lắk,21612,Xã Lê Lợi
+270,Đắk Lắk,21615,Phường Hùng Vương
+270,Đắk Lắk,21619,Xã Thống Nhất
+270,Đắk Lắk,21623,Xã Hưng Lợi
+270,Đắk Lắk,21630,Phường Trần Phú
+270,Đắk Lắk,21633,Xã Phước Long
+271,Khánh Hòa,21638,Xã Hiệp Thành
+271,Khánh Hòa,21647,Phường Tây Sơn
+271,Khánh Hòa,21653,Phường Nam Định
+271,Khánh Hòa,21654,Xã An Hòa
+271,Khánh Hòa,21663,Phường Tân Lập
+271,Khánh Hòa,21668,Xã Quang Trung
+271,Khánh Hòa,21670,Phường Hưng Lợi
+271,Khánh Hòa,21676,Phường Phú Lợi
+271,Khánh Hòa,21685,Xã Tân Thành
+271,Khánh Hòa,21687,Xã Đông Hòa
+271,Khánh Hòa,21692,Phường Thạnh Mỹ
+271,Khánh Hòa,21693,Phường Phước Long
+272,Lâm Đồng,21701,Phường Phước Long
+272,Lâm Đồng,21706,Phường Nam Định
+272,Lâm Đồng,21707,Xã An Phước
+272,Lâm Đồng,21709,Xã Thống Nhất
+272,Lâm Đồng,21718,Phường Trần Phú
+272,Lâm Đồng,21724,Xã Hưng Lợi
+272,Lâm Đồng,21729,Xã Hùng Vương
+272,Lâm Đồng,21733,Phường Tân Lập
+272,Lâm Đồng,21741,Xã Lê Lợi
+272,Lâm Đồng,21748,Phường An Hòa
+272,Lâm Đồng,21754,Phường Thạnh Mỹ
+272,Lâm Đồng,21762,Phường Đông Thành
+272,Lâm Đồng,21765,Phường Hòa Thuận
+272,Lâm Đồng,21767,Phường Hiệp Thành
+272,Lâm Đồng,21774,Phường Tân Phú
+272,Lâm Đồng,21775,Phường Bình Minh
+272,Lâm Đồng,21779,Phường Bắc Sơn
+273,Tây Ninh,21780,Phường Hưng Lợi
+273,Tây Ninh,21784,Phường An Phước
+273,Tây Ninh,21793,Phường Thạnh Mỹ
+273,Tây Ninh,21800,Xã Trung Tâm
+273,Tây Ninh,21802,Xã Long Hưng
+273,Tây Ninh,21809,Phường Quang Trung
+273,Tây Ninh,21810,Phường Đông Thành
+273,Tây Ninh,21811,Phường Phú Lợi
+273,Tây Ninh,21814,Phường Bắc Sơn
+273,Tây Ninh,21820,Phường Trần Phú
+273,Tây Ninh,21823,Xã An Hòa
+273,Tây Ninh,21824,Phường Tây Sơn
+273,Tây Ninh,21833,Phường Tân An
+273,Tây Ninh,21841,Phường Thống Nhất
+273,Tây Ninh,21842,Phường Tân Phú
+273,Tây Ninh,21850,Xã Phú Hòa
+274,Đồng Tháp,21859,Xã Tân Phú
+274,Đồng Tháp,21861,Xã Bình Minh
+274,Đồng Tháp,21870,Phường Thống Nhất
+274,Đồng Tháp,21879,Phường An Phước
+274,Đồng Tháp,21883,Phường Tân Lập
+274,Đồng Tháp,21884,Phường Đông Hòa
+274,Đồng Tháp,21888,Phường Trung Tâm
+274,Đồng Tháp,21896,Phường Hòa Bình
+274,Đồng Tháp,21897,Phường Tân An
+274,Đồng Tháp,21904,Phường Phú Hòa
+274,Đồng Tháp,21912,Xã Phú Lợi
+274,Đồng Tháp,21915,Phường Tân Thành
+274,Đồng Tháp,21918,Phường An Hòa
+274,Đồng Tháp,21927,Xã Thạnh Mỹ
+274,Đồng Tháp,21934,Phường Hòa Thuận
+274,Đồng Tháp,21937,Phường Đông Thành
+274,Đồng Tháp,21938,Phường Hiệp Thành
+274,Đồng Tháp,21941,Xã Long Hưng
+275,Vĩnh Long,21950,Phường Tân Thành
+275,Vĩnh Long,21957,Phường Đông Hòa
+275,Vĩnh Long,21965,Xã Tân Lập
+275,Vĩnh Long,21971,Phường Vĩnh Phúc
+275,Vĩnh Long,21977,Phường Thạnh Mỹ
+275,Vĩnh Long,21978,Xã Hòa Thuận
+275,Vĩnh Long,21982,Phường Đông Thành
+275,Vĩnh Long,21986,Xã Tân An
+275,Vĩnh Long,21989,Phường An Phước
+275,Vĩnh Long,21998,Phường Lê Lợi
+275,Vĩnh Long,21999,Phường Phước Long
+276,An Giang,22002,Phường Trần Phú
+276,An Giang,22009,Xã Phước Long
+276,An Giang,22010,Phường Long Hưng
+276,An Giang,22015,Xã Hòa Thuận
+276,An Giang,22022,Xã Tân Lập
+276,An Giang,22023,Phường Tân An
+276,An Giang,22025,Phường Hùng Vương
+276,An Giang,22031,Phường Quang Trung
+276,An Giang,22033,Xã Hiệp Thành
+276,An Giang,22038,Phường Tân Thành
+276,An Giang,22046,Xã Hòa Bình
+276,An Giang,22051,Phường Thạnh Mỹ
+276,An Giang,22058,Phường An Hòa
+276,An Giang,22064,Xã Trung Tâm
+276,An Giang,22066,Xã Phú Lợi
+277,Cà Mau,22067,Phường Bình Minh
+277,Cà Mau,22073,Xã Vĩnh Phúc
+277,Cà Mau,22080,Phường Trung Tâm
+277,Cà Mau,22089,Phường Tân Thành
+277,Cà Mau,22098,Phường Nam Định
+277,Cà Mau,22105,Xã Long Hưng
+277,Cà Mau,22111,Xã Hòa Thuận
+277,Cà Mau,22119,Phường Đông Thành
+277,Cà Mau,22128,Phường Tân An
+277,Cà Mau,22132,Phường Phước Long
+277,Cà Mau,22139,Xã Phú Hòa
+278,Thái Nguyên,22142,Xã Nam Định
+278,Thái Nguyên,22151,Xã Thống Nhất
+278,Thái Nguyên,22160,Phường Tân Lập
+278,Thái Nguyên,22169,Phường Hòa Thuận
+278,Thái Nguyên,22175,Xã Tân Phú
+278,Thái Nguyên,22184,Phường Hùng Vương
+278,Thái Nguyên,22191,Phường Trung Tâm
+278,Thái Nguyên,22198,Xã Hiệp Thành
+278,Thái Nguyên,22204,Xã Vĩnh Phúc
+278,Thái Nguyên,22208,Phường Quang Trung
+278,Thái Nguyên,22215,Phường Đông Thành
+278,Thái Nguyên,22216,Phường Phú Hòa
+278,Thái Nguyên,22220,Phường Bắc Sơn
+278,Thái Nguyên,22227,Phường Phước Long
+278,Thái Nguyên,22230,Phường Tây Sơn
+279,Phú Thọ,22234,Phường An Hòa
+279,Phú Thọ,22239,Xã Lê Lợi
+279,Phú Thọ,22241,Xã Hòa Bình
+279,Phú Thọ,22247,Xã Phước Long
+279,Phú Thọ,22255,Xã Phú Hòa
+279,Phú Thọ,22257,Xã Bình Minh
+279,Phú Thọ,22261,Xã Nam Định
+279,Phú Thọ,22270,Xã Hiệp Thành
+279,Phú Thọ,22276,Phường Hưng Lợi
+279,Phú Thọ,22278,Phường Tây Sơn
+279,Phú Thọ,22282,Phường Quang Trung
+279,Phú Thọ,22290,Xã Thống Nhất
+279,Phú Thọ,22292,Xã Bắc Sơn
+280,Ninh Bình,22301,Xã Phú Hòa
+280,Ninh Bình,22302,Phường Thạnh Mỹ
+280,Ninh Bình,22309,Xã Hòa Bình
+280,Ninh Bình,22314,Xã An Hòa
+280,Ninh Bình,22323,Phường Hòa Thuận
+280,Ninh Bình,22325,Phường Hưng Lợi
+280,Ninh Bình,22328,Phường Bắc Sơn
+280,Ninh Bình,22331,Xã An Phước
+280,Ninh Bình,22336,Phường Vĩnh Phúc
+280,Ninh Bình,22343,Xã Tân Lập
+280,Ninh Bình,22347,Phường Tân Phú
+280,Ninh Bình,22349,Phường Hùng Vương
+280,Ninh Bình,22351,Phường Trần Phú
+280,Ninh Bình,22356,Phường Tân An
+281,Lào Cai,22361,Phường Hiệp Thành
+281,Lào Cai,22366,Phường Tân Thành
+281,Lào Cai,22371,Phường Hùng Vương
+281,Lào Cai,22379,Phường Quang Trung
+281,Lào Cai,22388,Phường Tân An
+281,Lào Cai,22393,Phường Phú Hòa
+281,Lào Cai,22397,Phường Bắc Sơn
+281,Lào Cai,22401,Xã Phú Lợi
+281,Lào Cai,22407,Xã Tân Phú
+281,Lào Cai,22409,Xã Lê Lợi
+281,Lào Cai,22416,Xã Thống Nhất
+282,Tuyên Quang,22424,Phường Nam Định
+282,Tuyên Quang,22429,Xã Hòa Thuận
+282,Tuyên Quang,22430,Phường Phước Long
+282,Tuyên Quang,22438,Phường Tây Sơn
+282,Tuyên Quang,22439,Xã Bắc Sơn
+282,Tuyên Quang,22444,Phường Tân Thành
+282,Tuyên Quang,22453,Xã Hưng Lợi
+282,Tuyên Quang,22455,Xã Trần Phú
+282,Tuyên Quang,22462,Phường Đông Thành
+282,Tuyên Quang,22467,Xã Thống Nhất
+282,Tuyên Quang,22472,Phường Đông Hòa
+282,Tuyên Quang,22476,Phường Phú Hòa
+282,Tuyên Quang,22480,Phường An Hòa
+282,Tuyên Quang,22486,Xã Lê Lợi
+282,Tuyên Quang,22495,Phường Tân An
+282,Tuyên Quang,22504,Phường Bình Minh
+282,Tuyên Quang,22505,Phường Quang Trung
+283,Lạng Sơn,22507,Xã Long Hưng
+283,Lạng Sơn,22516,Xã Phước Long
+283,Lạng Sơn,22524,Phường Vĩnh Phúc
+283,Lạng Sơn,22525,Phường Hòa Bình
+283,Lạng Sơn,22528,Phường Tân Thành
+283,Lạng Sơn,22537,Phường Phú Hòa
+283,Lạng Sơn,22544,Xã Trần Phú
+283,Lạng Sơn,22546,Phường Nam Định
+283,Lạng Sơn,22553,Xã Tân Phú
+283,Lạng Sơn,22561,Xã Thạnh Mỹ
+283,Lạng Sơn,22564,Xã Hưng Lợi
+283,Lạng Sơn,22569,Xã An Hòa
+283,Lạng Sơn,22571,Xã Trung Tâm
+283,Lạng Sơn,22578,Phường Bình Minh
+284,Cao Bằng,22586,Xã Hùng Vương
+284,Cao Bằng,22587,Phường Thạnh Mỹ
+284,Cao Bằng,22589,Phường Bình Minh
+284,Cao Bằng,22593,Phường Đông Thành
+284,Cao Bằng,22598,Phường Tân An
+284,Cao Bằng,22607,Phường Vĩnh Phúc
+284,Cao Bằng,22616,Phường Trung Tâm
+284,Cao Bằng,22620,Phường An Hòa
+284,Cao Bằng,22626,Xã Phước Long
+284,Cao Bằng,22629,Phường An Phước
+284,Cao Bằng,22633,Phường Hưng Lợi
+284,Cao Bằng,22635,Phường Nam Định
+284,Cao Bằng,22643,Phường Hòa Bình
+284,Cao Bằng,22647,Xã Hiệp Thành
+284,Cao Bằng,22653,Phường Trần Phú
+284,Cao Bằng,22656,Xã Tân Phú
+285,Sơn La,22661,Phường Tân Phú
+285,Sơn La,22666,Phường Lê Lợi
+285,Sơn La,22673,Phường Tây Sơn
+285,Sơn La,22679,Phường Long Hưng
+285,Sơn La,22682,Xã Hiệp Thành
+285,Sơn La,22683,Xã Phú Lợi
+285,Sơn La,22688,Xã Tân Lập
+285,Sơn La,22690,Xã Thống Nhất
+285,Sơn La,22694,Xã Đông Hòa
+285,Sơn La,22695,Phường Trung Tâm
+285,Sơn La,22701,Phường Thạnh Mỹ
+285,Sơn La,22707,Phường Vĩnh Phúc
+285,Sơn La,22715,Xã Hưng Lợi
+285,Sơn La,22722,Xã Bình Minh
+285,Sơn La,22731,Xã Nam Định
+285,Sơn La,22735,Phường An Phước
+286,Điện Biên,22743,Xã Tân Lập
+286,Điện Biên,22744,Phường Vĩnh Phúc
+286,Điện Biên,22745,Xã Bắc Sơn
+286,Điện Biên,22746,Phường Tân Phú
+286,Điện Biên,22754,Phường Thống Nhất
+286,Điện Biên,22760,Xã Hiệp Thành
+286,Điện Biên,22765,Phường Đông Thành
+286,Điện Biên,22772,Phường Tây Sơn
+286,Điện Biên,22776,Phường Bình Minh
+286,Điện Biên,22780,Phường Lê Lợi
+286,Điện Biên,22781,Phường Phú Lợi
+286,Điện Biên,22790,Phường Quang Trung
+286,Điện Biên,22793,Phường Tân Thành
+286,Điện Biên,22796,Xã Nam Định
+286,Điện Biên,22801,Phường Hùng Vương
+286,Điện Biên,22808,Phường Trần Phú
+286,Điện Biên,22815,Phường Phú Hòa
+286,Điện Biên,22819,Phường Hòa Thuận
+287,Lai Châu,22826,Xã Đông Hòa
+287,Lai Châu,22831,Phường Bình Minh
+287,Lai Châu,22839,Phường Hùng Vương
+287,Lai Châu,22843,Xã Lê Lợi
+287,Lai Châu,22850,Phường Hiệp Thành
+287,Lai Châu,22858,Phường An Phước
+287,Lai Châu,22863,Xã Trần Phú
+287,Lai Châu,22868,Xã Tân Lập
+287,Lai Châu,22869,Phường Phú Lợi
+287,Lai Châu,22877,Phường Đông Thành
+287,Lai Châu,22879,Xã Long Hưng
+287,Lai Châu,22888,Phường Hòa Thuận
+287,Lai Châu,22894,Phường Hòa Bình

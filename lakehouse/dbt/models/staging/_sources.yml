@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: airflow_smoke
+    database: lakehouse
+    schema: airflow_smoke
+    tables:
+      - name: ping
+        description: "Mỗi lần DAG smoke_test_lakehouse chạy, Trino ghi 1 dòng vào đây."
+        loaded_at_field: checked_at
+        freshness:
+          warn_after: {count: 1, period: day}
+          error_after: {count: 3, period: day}
+        columns:
+          - name: run_id
+            data_tests:
+              - not_null
+              - unique
+          - name: checked_at
+            data_tests:
+              - not_null

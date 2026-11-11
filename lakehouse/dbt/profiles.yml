@@ -1,0 +1,13 @@
+tlcn:
+  target: dev
+  outputs:
+    dev:
+      type: trino
+      method: none
+      user: dbt
+      http_scheme: http
+      host: "{{ env_var('DBT_TRINO_HOST') }}"
+      port: "{{ env_var('DBT_TRINO_PORT') | as_number }}"
+      database: lakehouse
+      schema: dbt_dev
+      threads: 4

@@ -1,0 +1,29 @@
+﻿_batch_id,_extracted_at,_request,category_name,category_name_en,is_internal
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 2}",Nhóm Lô Cuốn Tóc,Hair Rollers,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 3}",Mặt nạ,Face Masks,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 4}",Nhóm SP Hỗ Trợ,Supporting Products,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 5}",Nhóm Mút,Makeup Sponges,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 6}",Dưỡng da,Skincare,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 7}",Nhóm Dao Cạo Nhíp Kéo,"Razors, Tweezers & Scissors",False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 8}",Nhóm Kẹp Mi,Eyelash Curlers,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 9}",Nhóm Phụ Kiện Nhà Tắm,Bathroom Accessories,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 10}",Trang điểm,Makeup,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 11}",Nhóm Cọ,Makeup Brushes,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 12}",Làm sạch,Cleansers & Makeup Removers,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 13}",Hàng B Grade / test / dummy,B-Grade Items / Testers / Dummy Products,True
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 14}",Nhóm FL603 và SP304,FL603 & SP304,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 15}",Nhóm Cọ Foundation,Foundation Brushes,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 16}",Nến thơm,Scented Candles,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 17}",Nhóm Vệ Sinh Cọ,Brush Cleaning Products,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 18}",Nhóm Mi Giả,False Eyelashes,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 19}",Nhóm Cọ Môi,Lip Brushes,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 20}",Nhóm Lược,Combs & Hairbrushes,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 21}",Dưỡng mi & môi,Lash & Lip Care,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 22}",Nhóm Cọ Mắt,Eye Makeup Brushes,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 23}",Trị mụn,Acne Treatments,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 24}",Chăm sóc tóc (mỹ phẩm),Hair Care Products,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 25}",Quà tặng,Gifts,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 26}",Vệ sinh & sát khuẩn,Hygiene & Sanitizing Products,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 27}",Nhóm Guasha,Gua Sha Tools,False
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 28}",Mã nội bộ,Internal Codes,True
+sample,,"{""file"": ""danh_muc_san_pham.xlsx"", ""sheet"": ""nhom"", ""row"": 29}",Nhóm New,New Arrivals,False
